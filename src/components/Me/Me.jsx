@@ -1,18 +1,13 @@
 import React from "react";
 import CV from "/Maximiliano Failla CV.pdf";
 import mail from "../../assets/mail.svg";
+import profile from "../../assets/profile.jpg";
 
 const Me = () => {
   return (
     <>
       <div className="me">
-        <img
-          src={
-            "https://marketing4ecommerce.net/wp-content/uploads/2024/02/ias-generadoras-de-imagenes.jpg"
-          }
-          alt="logo"
-          className="me-img"
-        />
+        <img src={profile} alt="profile-img" className="me-img" />
         <span className="me-title">Maximiliano Failla</span>
         <span className="me-subtitle">Desarrollador Web</span>
         <p className="me-description">

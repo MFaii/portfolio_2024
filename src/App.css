@@ -95,6 +95,7 @@
   width: 231px;
   height: 231px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .me-title {
