@@ -1,42 +1,421 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+.page {
+  background: #000000;
+  min-height: 100vh;
+  background-image: url("./assets/bg-portfolio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 36px;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  width: 80vw;
+  height: 60px;
+  position: fixed;
+}
+
+.logo_text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.logo_text:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #9933ff;
+}
+
+.nav_1 {
+  display: flex;
+  justify-content: left;
+}
+
+.nav_2 {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+
+.btn-nav {
+  width: 96px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 8.8px;
+  background: transparent;
+  font-family: "Poppins";
+  font-size: medium;
+}
+
+.btn-nav:hover {
+  cursor: pointer;
+  background: white;
+  color: #000000;
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.me-img {
+  width: 231px;
+  height: 231px;
+  border-radius: 50%;
+}
+
+.me-title {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 63px;
+  padding-top: 36px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.me-subtitle {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  background: -webkit-linear-gradient(#ffffff, #6320a7, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.me-description {
+  font-family: "Poppins";
+  text-align: center;
+  padding-top: 21px;
+  font-size: 22px;
+  line-height: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.me-btn {
+  margin-top: 34px;
+  background: #000000;
+  border: 1px solid #585858;
+  width: 187px;
+  height: 55px;
+  border-radius: 75px;
+  font-family: "Poppins";
+  font-size: medium;
+  box-shadow: 0px 16px 13.8px -1px rgba(128, 110, 255, 0.3);
 }
 
-.card {
-  padding: 2em;
+.me-btn:hover {
+  cursor: pointer;
+
+  background: rgb(48, 3, 73);
+  color: #000000;
+  box-shadow: 0px 16px 13.8px -1px rgba(128, 110, 255, 0.3);
+  transition: all 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.me-btn a {
+  text-decoration: none;
+}
+
+.about_section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about_section h1 {
+  font-family: "Inter";
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#ffffff, #9933ff, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about_section p {
+  font-family: "Inter";
+  font-size: 20px;
+  padding-top: 27px;
+  line-height: 25px;
+}
+
+.experience_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 98px;
+}
+
+.experience_section h1 {
+  font-family: "Inter";
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#ffffff, #9933ff, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 27px;
+}
+
+.experience {
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.experience_data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.exp_title {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-grow: 1;
+}
+
+.exp_date {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-grow: 1;
+}
+
+.exp_title span {
+  font-family: "Inter";
+  font-size: 22px;
+}
+
+.exp_date span {
+  font-family: "Inter";
+  font-size: 15px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.experience_section p {
+  font-family: "Inter";
+  font-size: 16px;
+  padding-top: 33px;
+}
+
+.experience hr {
+  border: none;
+  border-top: 1px solid #ffffff;
+  margin-top: 20px;
+}
+
+.exp_link {
+  background: #000000;
+  margin-top: 10px;
+  border: 1px solid #585858;
+  width: 80px;
+  height: 30px;
+  border-radius: 75px;
+  font-family: "Poppins";
+  font-size: 15px;
+}
+
+.exp_link:hover {
+  cursor: pointer;
+  background: rgb(48, 3, 73);
+  color: white;
+  box-shadow: 0px 16px 13.8px -1px rgba(128, 110, 255, 0.3);
+}
+
+.projects_section {
+  padding-top: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projects_section h1 {
+  font-family: "Inter";
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#ffffff, #9933ff, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.projects {
+  max-width: 900px;
+  width: 100%;
+}
+
+.projects_container {
+  background: transparent;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 16px 13.8px -1px rgba(255, 255, 255, 0.3);
+  margin-bottom: 40px;
+}
+.projects_container img {
+  width: 300px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.img-mask {
+  width: 450px;
+  max-height: 160px;
+  overflow: hidden;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project-info h3 {
+  font-family: "Inter";
+  text-align: center;
+  font-size: 20px;
+}
+
+.project-info p {
+  font-family: "Inter";
+  font-size: 14px;
+  text-align: center;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.project-stack span {
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: #585858 2px solid;
+  font-family: "Inter";
+  font-size: 12px;
+}
+
+.projects_btn {
+  background: #000000;
+  border: 1px solid #585858;
+  width: 187px;
+  height: 55px;
+  border-radius: 75px;
+  font-family: "Poppins";
+  font-size: medium;
+  box-shadow: 0px 16px 13.8px -1px rgba(128, 110, 255, 0.3);
+  margin-bottom: 27px;
+  margin-top: 10px;
+}
+
+.projects_btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.projects_btn:hover {
+  cursor: pointer;
+
+  background: rgb(48, 3, 73);
+  color: #000000;
+  box-shadow: 0px 16px 13.8px -1px rgba(128, 110, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.me-btn a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.me-btn-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.social_media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #585858;
+}
+
+.footer p {
+  font-family: "Inter";
+  font-size: 15px;
+  text-align: center;
+}
+
+.footer_txt_mask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #585858;
 }
