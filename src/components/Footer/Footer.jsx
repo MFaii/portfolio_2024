@@ -6,22 +6,18 @@ import mail from "../../assets/email.svg";
 
 const items = [
   {
-    id: 1,
     icon: github,
     link: "https://github.com/MFaii",
   },
   {
-    id: 2,
     icon: linkedin,
     link: "https://www.linkedin.com/in/maximilianofailla/",
   },
   {
-    id: 3,
     icon: twitter,
     link: "https://x.com/FaillaMaxi",
   },
   {
-    id: 4,
     icon: mail,
     link: "mailto:faillamaximiliano@gmail.com",
   },
@@ -30,9 +26,9 @@ const Footer = () => {
   return (
     <section className="footer">
       <div className="social_media">
-        {items.map((item) => {
+        {items.map((item, index) => {
           return (
-            <a href={item.link} key={item.id} target="_blank">
+            <a href={item.link} key={index} target="_blank">
               <img src={item.icon} alt={item.icon} />
             </a>
           );
@@ -40,7 +36,6 @@ const Footer = () => {
       </div>
       <div className="footer_txt_mask">
         <p>&copy; 2024 Maximiliano Failla</p>
-        <p>Made with React and CSS</p>
       </div>
     </section>
   );
