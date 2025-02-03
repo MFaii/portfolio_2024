@@ -14,4 +14,10 @@ export const experience = [
       "Desarrollo de portfolio con un diseño dado por el cliente en Figma.",
     link: "https://yoakoportfolio.vercel.app/",
   },
+  {
+    title: "Thaskify / Desarrollador Full Stack",
+    id: 3,
+    date: "Octubre 2024 - Actualidad",
+    description: "Desarrollo y mejora de componentes analíticos escalables",
+  },
 ];
