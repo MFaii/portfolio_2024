@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "/Maximiliano Failla CV.pdf";
+import CV from "/CV Maximiliano Failla 2025.pdf";
 import mail from "../../assets/mail.svg";
 import profile from "../../assets/profile.jpg";
 
