@@ -17,7 +17,7 @@ export const experience = [
   {
     title: "Thaskify / Desarrollador Full Stack",
     id: 3,
-    date: "Octubre 2024 - Actualidad",
+    date: "Octubre 2024 - Marzo 2025",
     description: "Desarrollo y mejora de componentes analíticos escalables",
   },
 ];
